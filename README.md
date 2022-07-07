@@ -5,10 +5,12 @@ changing button color at mouse over
 - Right Click / Edit Template / Edit a Copy
 - Name it style and select place to writing style code
 - Press OK and it done !
+- Add this to item's design properties
+```xml
+Style="{DynamicResource fileName}"
 ```
-for effecting item 
-you maybe need to add sizes to "ContentPresenter"
-for example ;
-<ContentPresenter Width="130" x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding ...
-                 | like this |
+### Most important step
+- Dont forget to add any background to item 
+```xml
+<item ... Background="any" ... />
 ```
